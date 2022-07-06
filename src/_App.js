@@ -1,10 +1,10 @@
-import Player from './components/Player';
+import Player from './components/Player.tsx';
 import Song from './components/Song';
 import './styles/app.scss';
 import chillHop from './data.js';
 import React, {useState, useRef} from 'react';
 import Library from './components/Library.js';
-import Nav from './components/Nav';
+import Nav from './components/Nav.tsx';
 
 function App() {
 //state
