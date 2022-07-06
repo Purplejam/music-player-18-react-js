@@ -27,10 +27,13 @@
 	}
 	display: flex;
 	align-items: center;
-	padding: 1rem 2rem 2rem 1rem;
+	padding: 1rem 2rem;
 	cursor: pointer;
 	&:hover {
 		background-color: rgb(222, 222, 255);
+		span {
+			opacity: 1;
+		}
 	}
 	.song-description {
 		padding-left: 1rem;
@@ -39,6 +42,17 @@
 		}
 		h4 {
 			font-size: 0.7rem;
+		}
+	}
+	span {
+		color: #646464;
+		padding-left: 1rem;
+		opacity: 0;
+		transition: all 0.4s ease;
+		margin-left: auto;
+		font-size: 1.8rem;
+		&:hover {
+			transform: scale(1.1);
 		}
 	}
 }

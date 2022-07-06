@@ -53,7 +53,7 @@ function App() {
   }
 
   async function songEndHandler() {
-    const currentIndex = songs.findIndex((item) => item.id == currentSong.id);
+    const currentIndex = songs.findIndex((item) => item.id === currentSong.id);
     await setCurrentSong(songs[(currentIndex + 1) % songs.length]);
   }
 
@@ -86,6 +86,7 @@ function App() {
         audioRef={audioRef}
         songs={songs} 
         isPlaying={isPlaying}
+        currentSong={currentSong}
         setCurrentSong={setCurrentSong} 
         setPlaying={setPlaying}/>
       <audio 

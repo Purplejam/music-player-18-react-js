@@ -12,7 +12,7 @@ function Nav({libraryStatus, setLibraryStatus}: NavPropsType) {
 
 	return(
 		<nav>
-			<h1>React Music</h1>
+			<h1>Music For Coding</h1>
 			<button onClick={() => setLibraryStatus(!libraryStatus)}>
 				Library {musicIcon}
 			</button>

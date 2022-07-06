@@ -9,10 +9,11 @@ type LibraryPropsType = {
 	setPlaying: Function, 
 	isPlaying: boolean, 
 	audioRef: any, 
-	libraryStatus: boolean
+	libraryStatus: boolean,
+	currentSong: SongType
 }
 
-function Library({songs, setSong, setCurrentSong, setPlaying, isPlaying, audioRef, libraryStatus}: LibraryPropsType) {
+function Library({songs, setSong, setCurrentSong, setPlaying, isPlaying, audioRef, libraryStatus, currentSong}: LibraryPropsType) {
 	return(
 		<div className={`${libraryStatus ? "library-active" : ''} library` }>
 			<h2>Library</h2>
@@ -26,6 +27,7 @@ function Library({songs, setSong, setCurrentSong, setPlaying, isPlaying, audioRe
 					key={song.id}
 					songs={songs}
 					setSong={setSong}
+					currentSong={currentSong}
 				/>)}
 			</div>
 		</div>

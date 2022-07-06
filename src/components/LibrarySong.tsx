@@ -1,4 +1,6 @@
  import {SongType} from '../App';
+ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+ import { faCirclePlay, faVolumeUp } from '@fortawesome/free-solid-svg-icons';
 
 
 //types
@@ -9,12 +11,18 @@
 		setCurrentSong: Function, 
 		setPlaying: Function, 
 		isPlaying: boolean, 
-		audioRef: any
+		audioRef: any,
+		currentSong: SongType
  }
+
+//icons
+const playIcon = <FontAwesomeIcon icon={faCirclePlay} />
+const volumeIcon = <FontAwesomeIcon icon={faVolumeUp} />
 
 function LibrarySong({
 	songs, 
 	setSong, 
+	currentSong,
 	song, 
 	setCurrentSong, 
 	setPlaying, 
@@ -24,7 +32,7 @@ function LibrarySong({
 //set active song with click
 function setActiveSong(): void {
 	const newSongs = songs.map((item) => {
-		if (item.id == song.id) {
+		if (item.id === song.id) {
 			return {
 				...item,
 				active: true
@@ -56,11 +64,12 @@ function setActiveSong(): void {
 
 	return(
 		<div className={`${song.active ? "selected" : null} library-song`} onClick={songSelectHandler}>
-			<img src={song.cover} alt="image"/>
+			<img src={song.cover} alt={song.name}/>
 			<div className="song-description">
 				<h3>{song.name}</h3>
 				<h4>{song.artist}</h4>
 			</div>
+			<span className="library-song-icon">{currentSong.id === song.id && isPlaying ? volumeIcon : playIcon}</span>
 		</div>
 		)
 }
