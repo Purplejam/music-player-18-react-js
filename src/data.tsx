@@ -13,6 +13,7 @@ function chillHop(): SongType[] {
       color: ["#205950", "#2ab3bf"],
       id: uuidv4(),
       active: true,
+      favorite: true,
     },
     {
       name: "Daylight",
@@ -23,6 +24,7 @@ function chillHop(): SongType[] {
       color: ["#EF8EA9", "#ab417f"],
       id: uuidv4(),
       active: false,
+      favorite: false,
     },
     {
       name: "Keep Going",
@@ -33,6 +35,7 @@ function chillHop(): SongType[] {
       color: ["#CD607D", "#c94043"],
       id: uuidv4(),
       active: false,
+      favorite: false,
     },
     {
       name: "Nightfall",
@@ -43,6 +46,7 @@ function chillHop(): SongType[] {
       color: ["#EF8EA9", "#ab417f"],
       id: uuidv4(),
       active: false,
+      favorite: false,
     },
     {
       name: "Reflection",
@@ -53,6 +57,7 @@ function chillHop(): SongType[] {
       color: ["#CD607D", "#c94043"],
       id: uuidv4(),
       active: false,
+      favorite: false,
     },
     {
       name: "Under the City Stars",
@@ -63,6 +68,7 @@ function chillHop(): SongType[] {
       color: ["#205950", "#2ab3bf"],
       id: uuidv4(),
       active: false,
+      favorite: false,
     },
     //ADD MORE HERE
   ];

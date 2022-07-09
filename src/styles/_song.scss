@@ -14,6 +14,20 @@
 	h3 {
 		font-size: 1rem;
 	}
+	span {
+		font-size: 1.3rem;
+		opacity: 0.5;
+		margin-top: 1.2rem;
+		transition: all 0.5s ease;
+		color: rgb(100, 100, 100);
+		cursor: pointer;
+	}
+	&.favorite {
+		span {
+			opacity: 1;
+			transform: scale(1.2);
+		}
+	}
 }
 
 @media screen and (max-width: 768px) {

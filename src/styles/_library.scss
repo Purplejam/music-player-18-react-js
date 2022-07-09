@@ -2,7 +2,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 30%;
+	width: 33%;
 	height: 100%;
 	box-shadow: 2px 2px 50px rgb(204, 204, 204);
 	overflow: scroll;
@@ -31,7 +31,7 @@
 	cursor: pointer;
 	&:hover {
 		background-color: rgb(222, 222, 255);
-		span {
+		span.library-song-icon {
 			opacity: 1;
 		}
 	}
@@ -39,6 +39,17 @@
 		padding-left: 1rem;
 		h3 {
 			font-size: 1rem;
+			i {
+				opacity: 0;
+				transition: all 0.5s ease;
+				font-size: 1rem;
+				padding-left: 5px;
+			}
+			&.favorite {
+				i {
+					opacity: 1;
+				}
+			}
 		}
 		h4 {
 			font-size: 0.7rem;

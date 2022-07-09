@@ -21,7 +21,8 @@ export type SongType = {
     audio: string,
     color: string[],
     id: string,
-    active: boolean
+    active: boolean,
+    favorite: boolean,
 }
 
 
@@ -69,7 +70,7 @@ function App() {
   return (
     <div className={`App ${libraryStatus ? "library-margin" : ""}  `}>
       <Nav libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus}/>
-      <Song currentSong={currentSong}/>
+      <Song currentSong={currentSong} songs={songs} setSong={setSong} isPlaying={isPlaying}/>
       <Player 
         songs={songs}
         setCurrentSong={setCurrentSong} 
