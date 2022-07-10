@@ -2,7 +2,7 @@ import Player from './components/Player';
 import Song from './components/Song';
 import './styles/app.scss';
 import chillHop from './data';
-import {useState, useRef} from 'react';
+import {useState, useRef, useEffect} from 'react';
 import Library from './components/Library';
 import Nav from './components/Nav';
 
@@ -33,14 +33,18 @@ function App() {
 	const [isPlaying, setPlaying] = useState<boolean>(false);
   const audioRef = useRef<null | HTMLAudioElement>(null);
   const [libraryStatus, setLibraryStatus] = useState<boolean>(true);
-
   const [songInfo, setSongInfo] = useState<songInfoType>({
     currentTime: 0,
     duration: 0,
     durationElapsed: 0,
     animatedInput: 0
   })
-
+  
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setLibraryStatus(false);
+    }
+  }, [songs])
 //handlers
   function timeUpdateHandler(e: React.ChangeEvent<HTMLAudioElement>): void {
     let current = e.target.currentTime;
@@ -81,7 +85,7 @@ function App() {
         setSong={setSong}
         isPlaying={isPlaying} 
         setPlaying={setPlaying}/>
-      <Library 
+      <Library
         libraryStatus={libraryStatus} 
         setSong={setSong}
         audioRef={audioRef}

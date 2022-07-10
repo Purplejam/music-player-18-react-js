@@ -10,7 +10,7 @@ type LibraryPropsType = {
 	isPlaying: boolean, 
 	audioRef: any, 
 	libraryStatus: boolean,
-	currentSong: SongType
+	currentSong: SongType,
 }
 
 function Library({songs, setSong, setCurrentSong, setPlaying, isPlaying, audioRef, libraryStatus, currentSong}: LibraryPropsType) {
