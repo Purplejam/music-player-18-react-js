@@ -7,9 +7,9 @@ import Library from './components/Library';
 import Nav from './components/Nav';
 
 //types
-type songInfoType = {
- currentTime: number | undefined;
- duration: number | undefined;
+export type songInfoType = {
+ currentTime: number;
+ duration: number;
  durationElapsed: number | undefined;
  animatedInput: number | undefined;
 }
@@ -62,19 +62,23 @@ function App() {
     await setCurrentSong(songs[(currentIndex + 1) % songs.length]);
   }
 
-  function getDurationHandler(): void  {
-    //const duration = e.target.duration;
+  function getDurationHandler(e: React.ChangeEvent<HTMLAudioElement>): void  {
     setSongInfo({
       ...songInfo,
-      duration: audioRef.current?.duration,
-      durationElapsed: audioRef.current?.duration,
+      duration: e.target.duration,
+      durationElapsed: e.target.duration,
       animatedInput: 0
     })
   }
   return (
     <div className={`App ${libraryStatus ? "library-margin" : ""}  `}>
-      <Nav libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus}/>
-      <Song currentSong={currentSong} songs={songs} setSong={setSong} isPlaying={isPlaying}/>
+      <Nav 
+        libraryStatus={libraryStatus} 
+        setLibraryStatus={setLibraryStatus}/>
+      <Song 
+        currentSong={currentSong} 
+        songs={songs} setSong={setSong} 
+        isPlaying={isPlaying}/>
       <Player 
         songs={songs}
         setCurrentSong={setCurrentSong} 

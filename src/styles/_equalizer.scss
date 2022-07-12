@@ -3,7 +3,7 @@
 .equalizer {
 	 position: relative;
 	 width: 40px;
-	 height: 200px;
+	 height: 60px;
 	 display: flex;
 	 justify-content: center;
 	 align-items: center;
@@ -31,11 +31,8 @@
 	  width: 10%;
 	  height: 25px;
 	  border-radius: 1px;
-	  //background-color: rgb(223, 152, 0);
-	  //background-color: rgb(223, 152, 0);
 	  animation-direction: alternate-reverse;
 	  margin: 0.8px;
-	  //animation: equalizer 3s ease infinite;
 	}
 		@keyframes equalizer {
 	  from {

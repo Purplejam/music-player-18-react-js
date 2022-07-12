@@ -9,6 +9,8 @@
 	background: white;
 	h2 {
 		padding: 1rem;
+		height: 10vh;
+		border-bottom: 1px solid rgba(204, 204, 204, 0.2);
 	}
 	transform: translateX(-100%);
 	transition: all 0.5s ease;

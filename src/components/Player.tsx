@@ -1,8 +1,7 @@
 import {useState, useEffect} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faAngleLeft, faAngleRight, faPause } from '@fortawesome/free-solid-svg-icons';
-import {SongType} from '../App';
-
+import {SongType, songInfoType} from '../App'; 
 //types
 type PlayerPropsType = {
 	songs: SongType[];
@@ -13,7 +12,7 @@ type PlayerPropsType = {
 	audioRef: any, 
 	setSong: Function,
 	setSongInfo: Function, 
-	songInfo: any
+	songInfo: songInfoType
 }
 
 
