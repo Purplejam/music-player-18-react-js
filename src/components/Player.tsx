@@ -2,6 +2,7 @@ import {useState, useEffect} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faAngleLeft, faAngleRight, faPause } from '@fortawesome/free-solid-svg-icons';
 import {SongType, songInfoType} from '../App'; 
+
 //types
 type PlayerPropsType = {
 	songs: SongType[];
@@ -26,6 +27,7 @@ function Player({
 	setSong,
 	setSongInfo, 
 	songInfo}: PlayerPropsType) {
+
 //icons
 	const playIcon = <FontAwesomeIcon onClick={playSongHandler} size="2x" className="play" icon={faPlay} />
 	const pauseIcon = <FontAwesomeIcon onClick={playSongHandler} size="2x" className="pause" icon={faPause} />

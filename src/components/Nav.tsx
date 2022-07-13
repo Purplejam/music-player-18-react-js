@@ -12,7 +12,7 @@ function Nav({libraryStatus, setLibraryStatus}: NavPropsType) {
 
 	return(
 		<nav>
-			<h1>Music For Coding</h1>
+			<a href="/"><h1>Music For Coding</h1></a>
 			<button onClick={() => setLibraryStatus(!libraryStatus)}>
 				Library {musicIcon}
 			</button>

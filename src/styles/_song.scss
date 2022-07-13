@@ -5,8 +5,9 @@
 	flex-direction: column;
 	justify-content: center;
 	img {
-		width: 20%;
+		width: 16%;
 		border-radius: 50%;
+		transition: all 0.5s ease;
 	}
 	h2 {
 		padding: 1.5rem 1rem 1rem 1rem;
@@ -31,10 +32,32 @@
 	}
 }
 
+.library-margin {
+	.song-container {
+		img {
+			width: 20%;
+		}
+	}
+}
+
 @media screen and (max-width: 768px) {
 	.song-container {
 		img {
-			width: 60%;
+			width: 40%;
+		}
+		h2 {
+			padding: 3rem 1rem 1rem 1rem;
+		}
+	}
+} 
+
+@media screen and (max-width: 400px) {
+	.song-container {
+		img {
+			width: 40%;
+		}
+		h2 {
+			padding: 3rem 1rem 1rem 1rem;
 		}
 	}
 } 

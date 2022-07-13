@@ -10,8 +10,8 @@ import Nav from './components/Nav';
 export type songInfoType = {
  currentTime: number;
  duration: number;
- durationElapsed: number | undefined;
- animatedInput: number | undefined;
+ durationElapsed: number;
+ animatedInput: number;
 }
 
 export type SongType = {

@@ -16,6 +16,14 @@ nav {
 			cursor: pointer;
 		}
 	}
+	a {
+		outline: none;
+		text-decoration: none;
+		color: rgb(51, 51, 51);
+		&:visited {
+			color: rgb(51, 51, 51);
+		}
+	}
 }
 
 
