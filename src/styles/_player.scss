@@ -68,14 +68,20 @@ input[type="range"]:focus {
 
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
+  opacity: 0;
   height: 16px;
   width: 16px;
 }
 
 input[type="range"]::-moz-range-thumb {
   -webkit-appearance: none;
+  opacity: 0;
   background: transparent;
   border: none;
+}
+
+input[type="range"]::-ms-thumb {
+  opacity:0;
 }
 
 @media screen and (max-width: 768px) {
