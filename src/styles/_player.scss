@@ -87,10 +87,13 @@ input[type="range"]::-ms-thumb {
 @media screen and (max-width: 768px) {
   .time-control {
     width: 90%;
+    p {
+      padding: 0.8rem;
+    }
   }
 
   .play-control {
-    width: 70%;
+    width:85%;
   }
 
   .time-counter {
