@@ -14,4 +14,4 @@ A single page application player on react and typescript
 ![Testing-Library](https://img.shields.io/badge/-TestingLibrary-%23E33332?style=for-the-badge&logo=testing-library&logoColor=white)
 
 # Screenshots
-!["The Main Page"](./src/screenshots/screenshot-1.png "Main page on desktop")
+!["The Main Page"](./screenshots/screenshot-1.png "Main page on desktop")
