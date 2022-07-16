@@ -18,7 +18,7 @@
 //icons
 const playIcon = <FontAwesomeIcon icon={faCirclePlay} />
 const volumeIcon = <FontAwesomeIcon icon={faVolumeUp} />
-const likeIcon = <FontAwesomeIcon icon={faHeartCircleCheck} />
+const likeIcon = <FontAwesomeIcon data-testid="like-icon" icon={faHeartCircleCheck} />
 
 function LibrarySong({
 	songs, 
