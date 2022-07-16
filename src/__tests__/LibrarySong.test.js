@@ -40,6 +40,5 @@ describe('<LibrarySong/>', () => {
 			)	
 			expect(container).toMatchSnapshot();
 	})
-
 })
 
