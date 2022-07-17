@@ -23,4 +23,4 @@ A single page application player on react and typescript
 
 # Created by
 Alex Kuzmenko
-react developer
+React Developer
