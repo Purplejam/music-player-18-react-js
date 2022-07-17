@@ -1,6 +1,8 @@
 # Web Player on React
 A single page application player on react and typescript
+
 ![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=music-player-react-ts)
+
 ![GitHub branch checks state](https://img.shields.io/github/checks-status/Purplejam/music-player-18-react-js/master)
 
 # Built with
@@ -18,3 +20,7 @@ A single page application player on react and typescript
 
 # Mobile
 <img src="./screenshots/screenshot-2.jpg" alt="phone" style="width:300px;"/>
+
+# Created by
+Alex Kuzmenko
+react developer
